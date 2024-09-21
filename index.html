@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde e Cuidados Pessoais</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Saúde e Cuidados Pessoais</div>
+        <nav class="menu">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#alimentacao">Alimentação</a></li>
+                <li><a href="#exercicios">Exercícios</a></li>
+                <li><a href="#saudemental">Saúde Mental</a></li>
+                <li><a href="#calculadora">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagem abaixo do header -->
+    <img src="assets/img/running.jpg" alt="Pessoa correndo" class="header-image">
+
+    <main>
+        <section id="inicio">
+            <h1>Importância da Saúde</h1>
+            <p>Este guia está repleto de dicas sobre a importância da saúde em nosso dia a dia.</p>
+            <h3>Importância da Saúde Física e Mental</h3>
+            <ul>
+                <li><strong>Saúde Física:</strong> Manter uma boa saúde física é crucial para aumentar a longevidade e melhorar a qualidade de vida. Exercícios regulares, alimentação saudável e dormir bem são práticas essenciais.</li>
+                <li><strong>Saúde Mental:</strong> Cuidar da mente é tão importante quanto cuidar do corpo. Práticas como meditação, terapia e momentos de relaxamento ajudam a reduzir o estresse e melhorar o bem-estar.</li>
+                <li><strong>Hábitos Saudáveis:</strong> Pequenos hábitos, como beber água regularmente, se movimentar mais e evitar substâncias nocivas, podem fazer uma grande diferença na saúde ao longo do tempo.</li>
+            </ul>
+        </section>
+
+        <section id="alimentacao">
+            <h2>Alimentação Saudável</h2>
+            <p>A alimentação saudável é um dos pilares para manter o corpo em bom funcionamento e prevenir diversas doenças.</p>
+            <h3>Dicas de Alimentação Saudável</h3>
+            <ul>
+                <li><strong>Coma alimentos naturais:</strong> Dê preferência a alimentos frescos, como frutas, legumes e verduras. Evite alimentos ultraprocessados, ricos em açúcar e gordura.</li>
+                <li><strong>Controle as porções:</strong> Coma com moderação e evite excessos. O equilíbrio é fundamental para manter o peso ideal e evitar doenças como obesidade e diabetes.</li>
+                <li><strong>Beba bastante água:</strong> A hidratação é essencial para o funcionamento adequado do organismo. Beba pelo menos 2 litros de água por dia.</li>
+                <li><strong>Evite o excesso de sal:</strong> Reduzir a ingestão de sódio ajuda a prevenir hipertensão e problemas cardíacos.</li>
+            </ul>
+        </section>
+
+        <section id="exercicios">
+            <h2>Exercícios Físicos</h2>
+            <p>A prática regular de exercícios físicos traz inúmeros benefícios, desde a melhora na disposição até a prevenção de doenças crônicas.</p>
+            <h3>Benefícios dos Exercícios Físicos</h3>
+            <ul>
+                <li><strong>Fortalecimento muscular e ósseo:</strong> Exercícios como musculação e atividades de impacto ajudam a fortalecer músculos e ossos, prevenindo lesões e osteoporose.</li>
+                <li><strong>Melhoria da saúde cardiovascular:</strong> Atividades aeróbicas, como corrida, caminhada e natação, fortalecem o coração e ajudam a controlar a pressão arterial.</li>
+                <li><strong>Controle de peso:</strong> A prática regular de exercícios auxilia no controle e perda de peso, aumentando o gasto calórico.</li>
+                <li><strong>Saúde mental:</strong> Exercitar-se libera endorfinas, melhorando o humor, reduzindo o estresse e promovendo uma sensação de bem-estar.</li>
+                <li><strong>Melhoria da qualidade do sono:</strong> A atividade física regular ajuda a regular o sono, proporcionando noites mais tranquilas e revigorantes.</li>
+            </ul>
+        </section>
+
+        <section id="saudemental">
+            <h2>Saúde Mental</h2>
+            <p>Cuidar da saúde mental é essencial para enfrentar os desafios do dia a dia e manter o equilíbrio emocional.</p>
+            <h3>Dicas para Cuidar da Saúde Mental</h3>
+            <ul>
+                <li><strong>Pratique a meditação:</strong> A meditação ajuda a acalmar a mente, melhorar a concentração e reduzir o estresse.</li>
+                <li><strong>Desenvolva uma rede de apoio:</strong> Mantenha contato com amigos e familiares. Conversar com pessoas em quem confiamos é uma maneira eficaz de aliviar tensões.</li>
+                <li><strong>Durma bem:</strong> Uma boa noite de sono é essencial para a recuperação do corpo e da mente. Dormir entre 7 a 8 horas por noite pode melhorar o humor e a disposição.</li>
+                <li><strong>Procure ajuda profissional:</strong> Se sentir que não consegue lidar com situações estressantes, procure a ajuda de um psicólogo ou psiquiatra. Terapias podem ser uma forma eficaz de tratar problemas emocionais.</li>
+            </ul>
+        </section>
+
+        <section id="calculadora">
+            <h2>Calculadora de IMC</h2>
+            <p>Lembre-se de colocar a pontuação correta da sua altura. Ex: 1.77</p>
+            <input type="number" id="peso" placeholder="Peso (kg)" required>
+            <input type="number" id="altura" placeholder="Altura (m)" required>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Flávia Rodrigues - Cuidados pessoais</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
